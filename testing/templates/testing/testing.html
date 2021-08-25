@@ -11,6 +11,18 @@
     <title>Testing</title>
 </head>
 <body>
-    <h1>Страница тестирования</h1>
+    <div>
+        <h1>Тест</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.otvet1 }}<br>
+            {{ form.otvet2 }}<br>
+            {{ form.otvet3 }}<br>
+            {{ form.otvet4 }}<br>
+            {{ form.otvet5 }}<br>
+            <span>{{ error }}</span>
+            <button type="submit">Отправить ответы</button>
+        </form>
+    </div>
 </body>
 </html>
