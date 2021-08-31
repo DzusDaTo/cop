@@ -1,0 +1,216 @@
+  .slideshow-container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Caption text */
+  .mainSlider_header_text {
+    margin-bottom: 400px;
+    color: #fff;
+    font-size: 88px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  
+  .mainSlider_header_low_text {
+    margin-bottom: 325px;
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+  
+  .dot {
+    height: 6px;
+    width: 6px;
+    margin: 0 5px;
+    background-color: rgb(172, 172, 172);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: relative;
+    top: -50px;
+  }
+  
+  .active {
+    background-color: #fff;
+  }
+  
+/*   .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  } */
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgba(255, 255, 255, 0.424);
+    font-weight: lighter;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    }
+  
+  /* Position the "next button" to the right */
+   .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    color: white;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  body{
+    max-height: 800px;
+    max-width: 2048px;
+    min-height: 360px;
+    min-width: 1024px;
+    margin: 0 auto;
+  
+  }
+  
+  .slideshow-container {
+    position: relative;
+    margin: 0;
+    max-height: 800px;
+    max-width: 2048px;
+    min-height: 360px;
+    min-width: 1024px;
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Caption text */
+  .text {
+    margin-bottom: 20%;
+    color: #fff;
+    font-size: 88px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  
+  .text_ {
+    margin-bottom: 16%;
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+  
+  .dot {
+    height: 6px;
+    width: 6px;
+    margin: 0 2px;
+    background-color: rgb(172, 172, 172);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: relative;
+    top: -50px;
+  }
+  
+  .active {
+    background-color: #d1d1d1;
+  }
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+  
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgba(255, 255, 255, 0.424);
+    font-weight: lighter;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    }
+  
+  /* Position the "next button" to the right */
+   .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    color: white;
+  }
+  

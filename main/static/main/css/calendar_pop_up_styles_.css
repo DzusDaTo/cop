@@ -1,0 +1,87 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.calendar-box .description span{
+  font-weight: bold;
+  
+}
+  
+.calendar-box .description p{
+  font-family: 'Raleway';
+  margin: 15px 10px;
+}
+
+.calendar-box .event_description{
+  transform: scale(1.08);
+  float: left; 
+  width: 1100px; 
+  height: 550px; 
+  background-color: #f6f6f5; 
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+
+.calendar-box .description h2{
+  text-align: center;
+  font-family: 'Raleway';
+  font-size: 30px;
+  font-weight: normal;
+  padding: 10px;
+  
+}
+
+
+.calendar-box .image img{
+  float: left;
+  height: 300px;
+  width: 30%;
+  margin: 0 20px 20px 0;
+}
+
+.calendar-box .calendar-box .description span{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.calendar-box .description{
+  text-align: justify;
+  border-radius: 10px;
+  z-index: 20;
+  float: left;
+  font: 16px 'Open Sans', Arial, Sans-serif;
+  padding: 20px;
+  color: #00334E;
+}
+
+.calendar-box .pop_up_sign_up {
+  width: 140px;
+  height: 40px;
+  color: #00334E;
+  background-color: #FFC208;
+  border-style: none;
+  font-family: 'Raleway' sans-serif;
+  font-size: 18px;
+  position: absolute;
+  bottom: 10px;
+  /* left: 50%; */
+  right: 20px;
+  cursor: pointer;
+  margin: 40px;
+  z-index: 31;
+}
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  } 
+
+  

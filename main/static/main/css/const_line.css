@@ -1,0 +1,59 @@
+
+.const_line{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 35px;
+    background-color: #fbfbfb;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    position: fixed; 
+    z-index: 1; 
+    margin-bottom: 10px;
+    color: #03334E;
+    top: 0;
+    left: 0;
+    min-width: 800px;
+}
+
+#left_const_line{
+    float: left;
+    margin-left: 40px;
+}
+
+#left_const_line a{
+    color: #03334E;
+}
+
+#left_const_line img{
+    width: 20px; 
+    height: 20px; 
+    margin:10px; 
+    vertical-align: middle;
+}
+
+#right_const_line{
+    float: right;
+    margin-right: 40px;
+}
+
+#right_const_line img{
+    width: 20px; 
+    height: 20px; 
+    margin: 10px; 
+    margin-left: 0;  
+    vertical-align: middle;
+}
+
+#empty{
+    width: 100%;
+    height: 35px;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .my_block {
+      overflow-x: scroll; /* добавляем горизонтальный скролл */
+      overflow-y: scroll; /* добавляем вертикальный скролл */
+    }  
+  }

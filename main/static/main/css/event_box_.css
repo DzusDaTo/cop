@@ -1,0 +1,113 @@
+/* Demo styles */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,700");
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+body{
+  align-items: center;
+}
+
+.calendar_event_box {
+  float: left;
+  margin: 0 30px 10px 100px;
+  transform: scale(1);
+  cursor: default;
+  opacity:1; /*Элемент полностью прозрачный (невидимый)*/
+  transition: 1s; /*Скорость перехода состояния элемента*/
+  animation: back 1s 1; /* Указываем название анимации, её время и количество повторов*/
+  animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+}
+
+.calendar_event_box_active {
+  float: left;
+  margin: 0 30px 10px 100px;
+  transform: scale(1);
+  opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+  transition: 1s; /*Скорость перехода состояния элемента*/
+  animation: show 1s 1; /* Указываем название анимации, её время и количество повторов*/
+  animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+}
+
+.event_box{
+  font-family: 'Open Sans';
+  width: 1145px;
+  height: 445px;
+  float:right;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,21,78,0.69);
+  margin: 5px;
+  margin-left: 0;
+  color: #00334E;
+  
+}
+
+
+
+
+.event_box img{
+  float: left;
+  padding: 10px 20px;
+}
+
+.event_box h2{
+  text-align:left;
+  padding: 10px 20px;
+  font-size: 42px;
+}
+
+.event_box h4{
+  text-align:left;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.event_box .description{
+  text-align:left;
+  padding: 10px 20px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.tail{
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 10px solid black;
+  border-bottom: 10px solid transparent;
+  float: left;
+  margin-top: 220px;
+  transform: scale(1.08);
+}
+
+#calend_header{
+  color: #00334E;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    width: 700px;
+}
+
+.calendar-box{
+  
+  min-width: 1900px;
+  max-width: 1900px;
+}
+
+@keyframes show{
+  0%{ opacity:0; }
+  100% { opacity:1; }
+ }
+
+ @keyframes back{
+  100%{ opacity:0; }
+  0% { opacity:1; }
+  
+ }

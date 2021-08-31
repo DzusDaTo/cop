@@ -1,0 +1,57 @@
+.video_portfolio{
+    margin: 0 auto;
+    width: 1400px; 
+    color: #00334E;
+    font-size: 20px;
+    font-family: "Open Sans";
+    text-align: left;
+}
+
+.video_portfolio iframe{
+    float: right;
+    margin: 0 0 50px 60px;
+}
+
+h3{
+    font-size: 60px;
+    text-align: center;
+    font-family: "Raleway" sans-serif;
+    font-weight: normal;
+    margin: 70px auto; 
+}
+
+.video_portfolio img{
+    float: left;
+    margin: 0 50px 60px 0;
+    width: 600px;
+    height: auto;
+}
+
+.rules{
+    float: right;
+    width: 700px;
+    margin-bottom: 50px;
+}
+
+.mark { 
+    color: rgb(255, 84, 84);
+    font-size: 50px;
+    width: 70px;
+    float:left;
+    
+}
+
+.rule{
+    color: #00334E;
+    font-size: 20px;
+    font-family: "Open Sans" sans-serif;
+    width: 600px;
+    float:right;
+    text-align: left;
+} 
+
+#portfolio_text{
+    text-indent: 80px;
+    text-align: justify;
+}
+

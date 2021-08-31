@@ -1,0 +1,167 @@
+/* Подключение шрифта Google */
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic");
+
+/* Базовые стили демо-страницы */
+.repeater {
+    font: 1em/1.67 'Open Sans', Arial, Sans-serif;
+    margin: 0;
+    background: #f6f6f6;
+    display:         flex;
+    flex-wrap:       wrap;
+    justify-content: center;
+    max-width: 1900px;
+    min-width: 1900px
+}
+
+.hey{
+    float: right;
+    width: 550px;
+    margin: 0 80px;
+    text-align: justify;
+}
+
+
+/* Общий контейнер */
+.wrapper {
+    width: 50%;
+    
+    float: left;
+}
+
+/* ------------- Контейнер с адаптивными блоками------------- */
+.masonry {
+    margin: 1.5em 0;
+    padding: -50px;
+    column-gap: 1.5em; /* Общее расстояние между колонками */
+    font-size: 1em;
+    -moz-column-gap: 1.5em; /* Расстояние между колонками для Firefox */
+    -webkit-column-gap: 1.5em; /* Расстояние между колонками  для Safari, Chrome и iOS */
+    /* transform: scale(1.3); */
+    display: block;
+}
+
+/* Элементы в виде плиток с содержанием */
+.item {
+    display: inline-block;
+    background: #fff;
+    padding: 1em;
+    margin: 0 0 1.5em;
+    width: 100%;
+    box-sizing: border-box; /* Изменения алгоритма расчета ширины и высоты элемента.*/
+    -moz-box-sizing: border-box; /* Для Firefox */ 
+    -webkit-box-sizing: border-box; /* Для Safari, Chrome, iOS иAndroid */ 
+    box-shadow: 2px 2px 4px 0 #ccc; /* Внешняя тень плиток */
+    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+/* Стили картинок, видое и фреймов внутри адаптивных плиток */
+.repeater img, iframe {
+max-width: 100%;
+display: block;
+}
+
+/* Стили ссылок внутри плиток */
+.item a {
+text-decoration: none;
+color: #359CC6;
+margin: 0 10px;
+}
+
+/* Стили ссылок при наведении */
+.item a:hover {
+color: #E88F00;    
+border-bottom: 1px dotted #9F1D35;
+}
+
+/* Медиа-запросы для различных размеров адаптивного макета */
+/* @media only screen and (min-width: 400px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .masonry {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+} */
+
+@media only screen and (min-width: 1900px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (max-width: 1900px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 1900px) {
+    .wrapper {
+        width: 800px;
+    }
+}
+
+@media only screen and (max-width: 1900px) {
+    .wrapper {
+        width: 800px;
+    }
+}
+
+.repeater hr {
+    border: none; /* Убираем границу для браузера Firefox */
+    color: red; /* Цвет линии для остальных браузеров */
+    background-color: red; /* Цвет линии для браузера Firefox и Opera */
+    height: 2px; /* Толщина линии */
+}
+
+.hey h2{
+    margin: 30px auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+
+.hey button{
+    text-align: center;
+    background-color: #ffc208;
+    border: 1px solid;
+    width: 250px;
+    height: 50px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.item h2{
+    
+    font-family: 'Anton', sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+}
+
