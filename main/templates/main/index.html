@@ -12,5 +12,14 @@
 </head>
 <body>
     <h1>Главная страница</h1>
+    <span>
+        {% if request.user.is_authenticated %}
+        Добро пожаловать, {{ user.username }}
+        <a href="{% url 'logout' %}">Выход</a>
+        {%else%}
+        <a href="{% url 'register' %}">Register</a>
+        <a href="{% url 'login' %}">Login</a>
+        {% endif %}
+    </span>
 </body>
 </html>

@@ -40,7 +40,10 @@ INSTALLED_APPS = [
     'main',
     'news',
     'testing',
+    'register',
+    'shipment',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -51,6 +54,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
 
 ROOT_URLCONF = 'copp.urls'
 

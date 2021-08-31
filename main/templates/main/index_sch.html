@@ -12,5 +12,21 @@
 </head>
 <body>
     <h1>Главная для школьников</h1>
+    <div>
+        <h2>Подать запрос</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.last_name }}<br>
+            {{ form.first_name }}<br>
+            {{ form.Email }}<br>
+            {{ form.school }}<br>
+            {{ form.age }}<br>
+            {{ form.grade }}<br>
+            {{ form.fio }}<br>
+            {{ form.number_fio }}<br>
+            <span>{{ error }}</span><br>
+            <button class="btn btn-success" type="submit">Отправить запрос</button>
+        </form>
+    </div>
 </body>
 </html>
