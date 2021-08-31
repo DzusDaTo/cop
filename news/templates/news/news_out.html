@@ -17,6 +17,7 @@
             <div>
                 <h3>{{ i.title }}</h3>
                 <p>{{ i.anons }}</p>
+                <p>{{ i.foto }}</p>
                 <a href="{% url 'news_detail' i.id %}" class="btn bnt-warning">Читать детальнее</a>
             </div>
         {% endfor %}
